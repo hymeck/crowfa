@@ -1,3 +1,9 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+tag_index:
+  path: /api/v1/tags
+  controller: App\Controller\TagController::index
+  methods: [GET]
+
+tag_post:
+  path: /api/v1/tags
+  controller: App\Controller\TagController::create
+  methods: [POST]
